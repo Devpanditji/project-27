@@ -18,10 +18,10 @@ function setup() {
 
   engine = Engine.create();
   world = engine.world;
-  var option={
+  var options={
     isStatic:true
   };
-  this.ground=Bodies.rectangle(100,350,400,20);
+  this.ground=Bodies.rectangle(100,350,400,20, options);
   World.add(world,this.ground);
   box1 = new Box(200,100,50,50);
   
